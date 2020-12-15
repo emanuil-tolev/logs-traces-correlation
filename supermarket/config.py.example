@@ -1,0 +1,9 @@
+config = {
+    "ELASTIC_APM": {
+        'SERVICE_NAME': 'supermarket-python',
+
+        # Set custom APM Server URL (default: http://localhost:8200)
+        'SERVER_URL': 'https://32b3e91-etcetera-etcetera.apm.europe-west2.gcp.elastic-cloud.com',
+        'SECRET_TOKEN': '???'
+    }
+}
