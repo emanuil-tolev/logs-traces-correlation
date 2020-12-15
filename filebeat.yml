@@ -26,7 +26,7 @@ filebeat.inputs:
   # Paths that should be crawled and fetched. Glob based paths.
   paths:
     #- /var/log/*.log
-    - /Users/emanuil/elastic/talks/logs-traces/supermarket/*.log
+    - /Users/emanuil/elastic/talks/logs-traces/supermarket/supermarket.log
     - /Users/emanuil/elastic/talks/logs-traces/rbapp/supermarketwarehouse/log/supermarketwarehouse.log
     #- c:\programdata\elasticsearch\logs\*
 
@@ -140,7 +140,7 @@ setup.kibana:
 # The cloud.id setting overwrites the `output.elasticsearch.hosts` and
 # `setup.kibana.host` options.
 # You can find the `cloud.id` in the Elastic Cloud web UI.
-cloud.id: "elastic-observability-deployment:ZXVyb3BlLXdlc3QyLmdjcC5lbGFzdGljLWNsb3VkLmNvbSQ2ZTM3OWE3OTJkNTI0NGE1YmFmNzZkYWMzOTU0NmM4YSQzZTM2MGM2OGZiNmY0MTUxOGEwNGZmYmFlZWQyZGU2MQ=="
+cloud.id: "apm-logs-correl:ZXVyb3BlL[etc, etc, redacted]"
 
 # The cloud.auth setting overwrites the `output.elasticsearch.username` and
 # `output.elasticsearch.password` settings. The format is `<user>:<pass>`.
@@ -248,3 +248,4 @@ processors:
 
 # This allows to enable 6.7 migration aliases
 #migration.6_to_7.enabled: true
+
