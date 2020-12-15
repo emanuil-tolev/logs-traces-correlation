@@ -44,4 +44,4 @@ def hello_world():
     return 'Single-file Supermarket Management System'
 
 def call_another_internal_service(x, y):
-    return requests.get('http://ruby-app.local:3000/?x={}&y={}'.format(x, y))
+    return requests.get('http://localhost:3000/?x={}&y={}'.format(x, y))
